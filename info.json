@@ -9,7 +9,9 @@
   "dependencies": [
     "base >= 2.0.77",
 
-    "khaoslib >= 1.17.2"
+    "khaoslib >= 1.17.2",
+
+    "! technology_or"
   ],
   "package": {
     "ignore": [
