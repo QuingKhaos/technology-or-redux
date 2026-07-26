@@ -1,7 +1,7 @@
 {
-  "name": "###NAME###",
-  "title": "###TITLE###",
-  "description": "###DESC###",
+  "name": "technology-or-redux",
+  "title": "Technology: OR (Redux)",
+  "description": "Provides logical OR operation in the technology tree for other mods.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
   "version": "1.0.0",
@@ -9,7 +9,6 @@
   "dependencies": [
     "base >= 2.0.77",
 
-    "khaosbash >= 1.2.0",
     "khaoslib >= 1.17.2"
   ],
   "package": {

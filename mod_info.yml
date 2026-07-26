@@ -1,8 +1,10 @@
 mod_info:
   title: |
-    ###TITLE###
+    Technology: OR (Redux)
   summary: |
-    ###DESC###
+    Provides logical OR operation in the technology tree for other mods.
+
+    An OR-node automatically unlocks as soon as one of the predecessor technologies is researched.
   description_file: README.md
   attach_source_link: true
   license: default_gnugplv3
