@@ -11,17 +11,50 @@ exclude_files = {
   ".luarocks/**",
 }
 
-files["**/*.lua"] = {
+-- Settings stage
+files["settings/**/*.lua"] = {
   std = "lua52",
   globals = {
-    "commands",
+    "data",
+    "log",
+    "mods",
+    "serpent",
+    "util",
+  },
+}
+
+files["settings*.lua"] = files["settings/**/*.lua"]
+files[".dev/**/settings*.lua"] = files["settings/**/*.lua"]
+
+-- Prototype stage
+files["prototypes/**/*.lua"] = {
+  std = "lua52",
+  globals = {
     "data",
     "defines",
     "feature_flags",
-    "game",
     "helpers",
     "log",
     "mods",
+    "serpent",
+    "settings",
+    "util",
+  },
+}
+
+files["data*.lua"] = files["prototypes/**/*.lua"]
+files[".dev/**/data*.lua"] = files["prototypes/**/*.lua"]
+
+-- Runtime stage
+
+files["scripts/**/*.lua"] = {
+  std = "lua52",
+  globals = {
+    "commands",
+    "defines",
+    "game",
+    "helpers",
+    "log",
     "prototypes",
     "rcon",
     "rendering",
@@ -30,9 +63,10 @@ files["**/*.lua"] = {
     "serpent",
     "settings",
     "storage",
-    "util",
   },
 }
+
+files["control.lua"] = files["scripts/**/*.lua"]
 
 -- Code quality settings
 max_line_length = false
