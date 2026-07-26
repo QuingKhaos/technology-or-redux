@@ -7,6 +7,6 @@ mod_info:
     An OR-node automatically unlocks as soon as one of the predecessor technologies is researched.
   description_file: README.md
   attach_source_link: true
-  license: default_gnugplv3
+  license: default_gnulgplv3
   category: internal
   tags: []
