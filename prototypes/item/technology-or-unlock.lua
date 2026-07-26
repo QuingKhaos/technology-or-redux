@@ -1,7 +1,7 @@
 local khaoslib_item = require("__khaoslib__.prototypes.item")
 
 khaoslib_item:load {
-  type = "tool",
+  type = "item",
   name = "technology-or-unlock",
   subgroup = "other",
   stack_size = 100,
