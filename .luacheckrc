@@ -39,6 +39,16 @@ files["prototypes/**/*.lua"] = {
     "serpent",
     "settings",
     "util",
+    -- util.lua
+    "gram",
+    "grams",
+    "kg",
+    "tons",
+    "second",
+    "minute",
+    "hour",
+    "meter",
+    "kilometer",
   },
 }
 
