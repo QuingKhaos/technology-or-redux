@@ -58,7 +58,7 @@ function technology_or.OR(predecessors)
     ingredients = {
       {"technology-or-unlock", 1}
     },
-  } :set_icons {{icon = "__technology-or-redux__/graphics/technology/placeholder.png", icon_size = 256}}
+  } :set_icons {{icon = "__technology-or-redux__/graphics/technology/or-gate.png", icon_size = 256}}
 
   for _, predecessor in pairs(predecessors) do
     local predecessor_tech = khaoslib_technology:load(predecessor)
